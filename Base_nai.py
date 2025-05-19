@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+7#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 
@@ -87,7 +87,7 @@ def usage():
     -h : help
     -s : server ip
     -p : port default 80
-    -t : turbo default 200 \033[0m''')
+    -t : turbo default 135 \033[0m''')
     sys.exit()
 
 
@@ -116,7 +116,7 @@ def get_parameters():
     else:
         port = opts.port
     if opts.turbo is None:
-        thr = 200
+        thr = 135
     else:
         thr = opts.turbo
 
