@@ -37,7 +37,6 @@ def my_bots():
 def bot_Base_nai(url):
     print("Base_nai")
 
-bot_Base_nai()
     
     try:
         while True:
