@@ -34,7 +34,7 @@ def my_bots():
     return bots
 
 
-def bot_Base_nai():
+def bot_Base_nai(url):
     print("Base_nai")
 
 bot_Base_nai()
